@@ -1,24 +1,119 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Thank you from Tanmoy</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Tanmoy | Thank you</title>
+ <meta charset="utf-8">
+ <meta http-equiv="refresh" content="4; url='https://tanmoy-debnath.github.io/-/'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="www.maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="www.maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="www.cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	 <link rel="shortcut icon" sizes="192x192" href="assets/images/favicons/favicon (1).ico">
-	
+
+<style>
+
+/*--thank you pop starts here--*/
+.thank-you-pop{
+	width:100%;
+ 	padding:20px;
+	text-align:center;
+}
+.thank-you-pop img{
+	width:76px;
+	height:auto;
+	margin:0 auto;
+	display:block;
+	margin-bottom:25px;
+}
+
+.thank-you-pop h1{
+	font-size: 42px;
+    margin-bottom: 25px;
+	color:#5C5C5C;
+}
+.thank-you-pop p{
+	font-size: 20px;
+    margin-bottom: 27px;
+ 	color:#5C5C5C;
+}
+.thank-you-pop h3.cupon-pop{
+	font-size: 25px;
+    margin-bottom: 40px;
+	color:#222;
+	display:inline-block;
+	text-align:center;
+	padding:10px 20px;
+	border:2px dashed #222;
+	clear:both;
+	font-weight:normal;
+}
+.thank-you-pop h3.cupon-pop span{
+	color:#03A9F4;
+}
+.thank-you-pop a{
+	display: inline-block;
+    margin: 0 auto;
+    padding: 9px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #8BC34A;
+    border-radius: 17px;
+}
+.thank-you-pop a i{
+	margin-right:5px;
+	color:#fff;
+}
+#ignismyModal .modal-header{
+    border:0px;
+}
+/*--thank you pop ends here--*/
+
+
+</style>
+</head>
 <body>
-    <br> <br> <br> <br> <br>
-	<div class="text-center">
-  <h1 class="display-3">Thank You!</h1>
-  <p class="lead"><strong>Thanks a bunch for filling that out. It means a lot to me, just like you do! We really appreciate you giving us a moment of your time today. Thanks for being you.</strong></p>
-  <p>Tanmoy Debnath</p>
-  <hr>
 
-  <p class="lead">
-    <a class="btn btn-primary btn-sm" href="https://tanmoy-debnath.github.io/-/">Continue to mainpage</a>
-  </p>
+<!--Model Popup starts-->
+<div class="container">
+    <div class="row">
+        
+        <div class="modal fade" id="ignismyModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                   
+					
+                    <div class="modal-body">
+                       
+						<div class="thank-you-pop">
+							<img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+							<h1>Thank You!</h1>
+							<p>Your submission is received and I will contact you soon</p>
+							<h3 class="cupon-pop">Your Submission Id: <span id="uniqueID"></span></h3>
+							
+
+
+
+ <script>
+          {
+         let id = () => {
+           return Math.floor((1 + Math.random()) * 0x10000)
+               .toString(16)
+               .substring(1);
+         }
+           document.getElementById("uniqueID").innerHTML = id();
+         }
+      </script>
+							
+ 						</div>
+                         
+                    </div>
+					
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 </body>
 </html>
